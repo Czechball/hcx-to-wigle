@@ -37,6 +37,6 @@ echo "MAC,SSID,AuthMode,FirstSeen,Channel,RSSI,CurrentLatitude,CurrentLongitude,
 
 # Insert values from actual csv
 
-cat "$TMPFILE" | awk 'BEGIN { FS = "\t" } ; { print $3","$4","$5$6","$1" "$2","$9","$10","$15","$16","$20",0,WIFI" }' >> "$FILENAME"
+awk 'BEGIN { FS = "\t" } ; { print $3","$4","$5$6","$1" "$2","$9","$10","$15","$16","$20",0,WIFI" }' "$TMPFILE" >> "$FILENAME"
 
 rm "$TMPFILE"
