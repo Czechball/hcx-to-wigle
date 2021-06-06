@@ -29,7 +29,7 @@ hcxpcapngtool "$1" --csv "$TMPFILE" > /dev/null
 
 # Insert pre-header
 
-echo "$APPLICATION,appRelease=$VERSION,model=$APPLICATION,release=$VERSION,device=$APPLICATION,display=$APPLICATION,board=$APPLICATION,brand=$VENDOR" > "$FILENAME"
+echo "WigleWifi-1.4,appRelease=$APPLICATION $VERSION,model=$APPLICATION,release=$VERSION,device=$APPLICATION,display=$APPLICATION,board=$APPLICATION,brand=$VENDOR" > "$FILENAME"
 
 # Insert header
 
