@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILENAME="${1%.*}-wigle.csv"
+FILENAME="$1-wigle.csv"
 TMPFILE=$(mktemp)
 
 # Sanity Checks
